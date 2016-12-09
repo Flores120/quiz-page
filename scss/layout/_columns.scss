@@ -51,3 +51,21 @@
     background-image: url('http://thesource.com/wp-content/uploads/2016/11/gambinonewalbum.jpeg');
   }
 }
+.q7 {
+  @extend .q1;
+  &::after {
+    background-image: url('https://smhttp-ssl-33667.nexcesscdn.net/manual/wp-content/uploads/2016/05/Kanye-West-fashion-style--570x381.jpg');
+  }
+}
+.q8 {
+  @extend .q1;
+  &::after {
+    background-image: url('http://www.billboard.com/files/styles/article_main_image/public/media/gucci-mane-press-2016-billboard-1548.jpg');
+  }
+}
+.q9 {
+  @extend .q1;
+  &::after {
+    background-image: url('http://www.ncatregister.com/wp-content/uploads/2016/10/wpid-kid-cudi-goodbye.jpg.jpeg');
+  }
+}

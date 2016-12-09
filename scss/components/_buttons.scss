@@ -8,7 +8,7 @@
   &:hover {
     @include animation(scale 1.0s ease-in, slide 2.0s ease);
     cursor: pointer;
-    filter: brightness(3);
+    background-color: darken($main-color, 30%);
   }
 }
 .view {
