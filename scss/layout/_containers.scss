@@ -1,13 +1,32 @@
-.img-container {
-  height: 100%;
+.container {
   width: 90%;
-  background: gray;
+  margin: auto;
+}
+.card-container {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.q1 {
+  position: relative;
+  &::after {
+  background-image: url('http://www.lovebscott.com/wp-content/uploads/2015/09/Screen-Shot-2015-03-23-at-12.06.47-PM.png');
+  @include transparent-bg;
+  @include cover;
+  }
+}
+.q2 {
+  @extend .q1;
+  &::after {
+    background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/10/drake_screensavers_background_hd_wallpapers.jpg');
+  }
+}
+
+.img-container {
+  width: 90%;
   margin: auto;
   padding: 10px;
   img {
-    width: 85%;
+    width: 70%;
     display: block;
     margin: 0 auto;
-
   }
 }
