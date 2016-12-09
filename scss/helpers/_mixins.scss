@@ -13,3 +13,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@mixin bright {
+  &:hover {
+    filter: brightness(1);
+  }
+}
