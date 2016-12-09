@@ -3,5 +3,15 @@
   height: 40px;
   background-color: $main-color;
   border: none;
+  outline: none;
   color: white;
+  &:hover {
+    @include animation(scale 1.0s ease-in, slide 2.0s ease);
+    cursor: pointer;
+    filter: brightness(3);
+  }
+}
+.view {
+  @extend .primary;
+  background-color: $secondary-color;
 }

@@ -26,10 +26,11 @@
     background-image: url('https://consequenceofsound.files.wordpress.com/2015/03/screen-shot-2015-03-06-at-5-05-44-pm.png');
   }
 }
-.img-container {
+.top-container {
   width: 100%;
   padding: 15px;
   img {
+    float: left;
     max-width: 500px;
     border: solid white 2px;
     width: 45%;
@@ -37,4 +38,12 @@
     top: 1%;
     left: 1%;
   }
+  button {
+    width: 30%;
+    float: right;
+    margin-right: 10%;
+  }
+}
+.content {
+  clear: both;
 }

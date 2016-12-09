@@ -4,10 +4,9 @@ html, body {
   color: white;
   font-family: 'Roboto', sans-serif; }
 
-.title {
-  clear: both;
+h2 {
   font-weight: bold;
-  font-size: 20px; }
+  font-size: 30px; }
 
 .container {
   width: 90%;
@@ -39,25 +38,43 @@ html, body {
 .q3::after {
   background-image: url("https://consequenceofsound.files.wordpress.com/2015/03/screen-shot-2015-03-06-at-5-05-44-pm.png"); }
 
-.img-container {
+.top-container {
   width: 100%;
   padding: 15px; }
-  .img-container img {
+  .top-container img {
+    float: left;
     max-width: 500px;
     border: solid white 2px;
     width: 45%;
     position: relative;
     top: 1%;
     left: 1%; }
+  .top-container button {
+    width: 30%;
+    float: right;
+    margin-right: 10%; }
+
+.content {
+  clear: both; }
 
 .content {
   padding: 20px; }
 
-.primary {
+.primary, .view {
   width: 47%;
   height: 40px;
   background-color: #cc342c;
   border: none;
+  outline: none;
   color: white; }
+  .primary:hover, .view:hover {
+    -webkit-animation: scale 1s ease-in, slide 2s ease;
+    -moz-animation: scale 1s ease-in, slide 2s ease;
+    animation: scale 1s ease-in, slide 2s ease;
+    cursor: pointer;
+    filter: brightness(3); }
+
+.view {
+  background-color: #e23d8d; }
 
 /*# sourceMappingURL=styles.css.map */
