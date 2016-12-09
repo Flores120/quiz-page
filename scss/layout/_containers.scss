@@ -3,7 +3,8 @@
   margin: auto;
 }
 .card-container {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 1em;
 }
 .q1 {
   position: relative;
@@ -19,14 +20,21 @@
     background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/10/drake_screensavers_background_hd_wallpapers.jpg');
   }
 }
-
+.q3 {
+  @extend .q1;
+  &::after {
+    background-image: url('https://consequenceofsound.files.wordpress.com/2015/03/screen-shot-2015-03-06-at-5-05-44-pm.png');
+  }
+}
 .img-container {
-  width: 90%;
-  margin: auto;
-  padding: 10px;
+  width: 100%;
+  padding: 15px;
   img {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
+    max-width: 500px;
+    border: solid white 2px;
+    width: 45%;
+    position: relative;
+    top: 1%;
+    left: 1%;
   }
 }
