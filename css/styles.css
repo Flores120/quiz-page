@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -9,16 +15,26 @@ h2 {
   font-size: 30px; }
 
 .container {
-  width: 90%;
+  width: 95%;
+  overflow: auto;
   margin: auto; }
 
+.content-container {
+  max-width: 1500px;
+  width: 90%;
+  overflow: auto;
+  margin: 0 auto; }
+
 .card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 1em; }
 
-.q1, .q2, .q3 {
+.q1, .q2, .q3, .q4 {
   position: relative; }
-  .q1::after, .q2::after, .q3::after {
+  .q1::after, .q2::after, .q3::after, .q4::after {
     background-image: url("http://www.lovebscott.com/wp-content/uploads/2015/09/Screen-Shot-2015-03-23-at-12.06.47-PM.png");
     content: "";
     opacity: brightness(0.5);
@@ -38,7 +54,11 @@ h2 {
 .q3::after {
   background-image: url("https://consequenceofsound.files.wordpress.com/2015/03/screen-shot-2015-03-06-at-5-05-44-pm.png"); }
 
+.q4::after {
+  background-image: url("http://saintheron.com/wp-content/uploads/2015/11/Rihanna-2015.jpg"); }
+
 .top-container {
+  overflow: auto;
   width: 100%;
   padding: 15px; }
   .top-container img {
@@ -59,6 +79,26 @@ h2 {
 
 .content {
   padding: 20px; }
+
+@media (min-width: 800px) {
+  .card-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    height: 400px;
+    margin: 3px; }
+    .card-container:last-child {
+      margin-right: 0; } }
+@media (min-width: 1200px) {
+  .card-container {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    width: 30%; }
+    .card-container:last-child {
+      margin-right: 0; } }
 
 .primary, .view {
   width: 47%;

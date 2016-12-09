@@ -1,8 +1,18 @@
 .container {
-  width: 90%;
+  width: 95%;
+  overflow: auto;
   margin: auto;
 }
+.content-container {
+  max-width: 1500px;
+  width: 90%;
+  overflow: auto;
+  margin: 0 auto;
+}
 .card-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   margin-bottom: 1em;
 }
@@ -26,7 +36,14 @@
     background-image: url('https://consequenceofsound.files.wordpress.com/2015/03/screen-shot-2015-03-06-at-5-05-44-pm.png');
   }
 }
+.q4 {
+  @extend .q1;
+  &::after {
+    background-image: url('http://saintheron.com/wp-content/uploads/2015/11/Rihanna-2015.jpg');
+  }
+}
 .top-container {
+  overflow: auto;
   width: 100%;
   padding: 15px;
   img {

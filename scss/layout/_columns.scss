@@ -1,3 +1,15 @@
 .content {
   padding: 20px;
 }
+.card-container {
+  @media #{$brk-med} {
+    @include span-columns(6 of 12);
+    height: 400px;
+    margin: 3px;
+  }
+  @media #{$brk-lrg} {
+    @include span-columns(3 of 12);
+    width: 30%
+
+  }
+}
